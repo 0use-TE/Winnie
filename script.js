@@ -72,10 +72,13 @@ function showTooltip(element, text) {
   setTimeout(() => tooltip.classList.add("hidden"), 1500);
 }
 
-// 简单音效（Web Audio API）
-const audioCtx = typeof AudioContext !== "undefined" ? new AudioContext() : null;
+// 简单音效（Web Audio API）— 与背景音乐共用 AudioContext
+function getAudioCtx() {
+  return Music.initContext();
+}
 
 function playClickSound() {
+  const audioCtx = getAudioCtx();
   if (!audioCtx) return;
   const osc = audioCtx.createOscillator();
   const gain = audioCtx.createGain();
@@ -90,6 +93,7 @@ function playClickSound() {
 }
 
 function playPopSound() {
+  const audioCtx = getAudioCtx();
   if (!audioCtx) return;
   const osc = audioCtx.createOscillator();
   const gain = audioCtx.createGain();
@@ -103,17 +107,6 @@ function playPopSound() {
   osc.start(audioCtx.currentTime);
   osc.stop(audioCtx.currentTime + 0.15);
 }
-
-// 首次点击激活音频
-document.addEventListener(
-  "click",
-  () => {
-    if (audioCtx && audioCtx.state === "suspended") {
-      audioCtx.resume();
-    }
-  },
-  { once: true }
-);
 
 // 随机飘落的方块粒子
 function createParticle() {
