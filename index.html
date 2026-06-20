@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>王雯的小世界 · Winnie's World</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=ZCOOL+KuaiLe&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="sky">
+    <div class="cloud cloud-1"></div>
+    <div class="cloud cloud-2"></div>
+    <div class="cloud cloud-3"></div>
+    <div class="sun"></div>
+  </div>
+
+  <div class="ground">
+    <div class="grass-row"></div>
+    <div class="dirt-row"></div>
+  </div>
+
+  <header class="hotbar">
+    <div class="hotbar-slot active" data-section="home">
+      <span class="slot-icon">🏠</span>
+      <span class="slot-label">首页</span>
+    </div>
+    <div class="hotbar-slot" data-section="about">
+      <span class="slot-icon">📖</span>
+      <span class="slot-label">关于我</span>
+    </div>
+    <div class="hotbar-slot" data-section="hobbies">
+      <span class="slot-icon">⚽</span>
+      <span class="slot-label">爱好</span>
+    </div>
+    <div class="hotbar-slot" data-section="games">
+      <span class="slot-icon">🎮</span>
+      <span class="slot-label">游戏</span>
+    </div>
+    <div class="hotbar-slot" data-section="gallery">
+      <span class="slot-icon">🎨</span>
+      <span class="slot-label">画廊</span>
+    </div>
+  </header>
+
+  <main class="container">
+    <!-- 首页 -->
+    <section id="home" class="panel active">
+      <div class="chest">
+        <div class="chest-lid"></div>
+        <div class="chest-body">
+          <div class="player-card">
+            <div class="player-skin">
+              <div class="skin-head">
+                <div class="hair hair-top"></div>
+                <div class="hair hair-left"></div>
+                <div class="hair hair-right"></div>
+                <div class="face">
+                  <span class="eye eye-left"></span>
+                  <span class="eye eye-right"></span>
+                  <span class="blush blush-left"></span>
+                  <span class="blush blush-right"></span>
+                  <span class="mouth"></span>
+                </div>
+              </div>
+              <div class="skin-torso">
+                <div class="skin-arm arm-left">
+                  <div class="skin-hand"></div>
+                </div>
+                <div class="skin-body"></div>
+                <div class="skin-arm arm-right">
+                  <div class="skin-hand"></div>
+                </div>
+              </div>
+              <div class="skin-legs-row">
+                <div class="skin-leg">
+                  <div class="skin-foot"></div>
+                </div>
+                <div class="skin-leg">
+                  <div class="skin-foot"></div>
+                </div>
+              </div>
+            </div>
+            <div class="player-info">
+              <h1 class="title">王雯</h1>
+              <p class="subtitle">Winnie · 三年级冒险家</p>
+              <div class="health-bar">
+                <span class="heart">❤</span>
+                <span class="heart">❤</span>
+                <span class="heart">❤</span>
+                <span class="heart">❤</span>
+                <span class="heart">❤</span>
+                <span class="heart">❤</span>
+                <span class="heart">❤</span>
+                <span class="heart">❤</span>
+                <span class="heart">❤</span>
+                <span class="heart">❤</span>
+              </div>
+              <p class="welcome-text">
+                欢迎来到我的方块世界！<br>
+                点下面的快捷栏，探索更多内容吧 ✨
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="achievement">
+        <span class="achievement-icon">🏆</span>
+        <span>成就解锁：创建个人网站！</span>
+      </div>
+    </section>
+
+    <!-- 关于我 -->
+    <section id="about" class="panel">
+      <div class="book">
+        <h2 class="panel-title">📖 关于我</h2>
+        <div class="book-page">
+          <div class="info-row">
+            <span class="info-label">名字</span>
+            <span class="info-value">王雯 (Winnie)</span>
+          </div>
+          <div class="info-row">
+            <span class="info-label">年级</span>
+            <span class="info-value">三年级 🎒</span>
+          </div>
+          <div class="info-row">
+            <span class="info-label">性格</span>
+            <span class="info-value">爱探索 · 爱创造 · 爱冒险</span>
+          </div>
+          <div class="info-row">
+            <span class="info-label">座右铭</span>
+            <span class="info-value">像史蒂夫一样，永远充满好奇心！</span>
+          </div>
+        </div>
+        <p class="about-desc">
+          嗨！我是王雯，大家都叫我 Winnie。
+          我喜欢在球场上奔跑，也喜欢拿起画笔画画。
+          放学之后，我最爱打开游戏，在我的世界里建造梦想中的家园！
+        </p>
+      </div>
+    </section>
+
+    <!-- 爱好 -->
+    <section id="hobbies" class="panel">
+      <h2 class="panel-title">⚽ 我的爱好</h2>
+      <div class="inventory-grid">
+        <div class="inventory-slot hobby-slot" data-hobby="soccer">
+          <div class="block-icon soccer-block">⚽</div>
+          <h3>踢足球</h3>
+          <p>在绿茵场上奔跑，和队友一起进球！</p>
+          <div class="xp-bar"><div class="xp-fill" style="width: 90%"></div></div>
+          <span class="xp-label">技能等级：钻石 ⚽</span>
+        </div>
+        <div class="inventory-slot hobby-slot" data-hobby="art">
+          <div class="block-icon art-block">🎨</div>
+          <h3>画画</h3>
+          <p>用颜色记录想象中的世界，每一笔都是冒险。</p>
+          <div class="xp-bar"><div class="xp-fill" style="width: 85%"></div></div>
+          <span class="xp-label">技能等级：黄金 🎨</span>
+        </div>
+        <div class="inventory-slot hobby-slot" data-hobby="build">
+          <div class="block-icon build-block">🧱</div>
+          <h3>建造</h3>
+          <p>用方块搭房子、搭城堡，创造属于自己的世界。</p>
+          <div class="xp-bar"><div class="xp-fill" style="width: 95%"></div></div>
+          <span class="xp-label">技能等级：下界合金 🧱</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- 游戏 -->
+    <section id="games" class="panel">
+      <h2 class="panel-title">🎮 最爱的游戏</h2>
+      <div class="game-list">
+        <article class="game-card minecraft">
+          <div class="game-banner mc-banner"></div>
+          <div class="game-content">
+            <h3>我的世界</h3>
+            <p class="game-tag">沙盒 · 建造 · 冒险</p>
+            <p>挖矿石、建房子、养动物，无限可能的方块世界！</p>
+            <div class="game-items">
+              <span class="item">⛏️ 钻石镐</span>
+              <span class="item">🏠 温馨小屋</span>
+              <span class="item">🐑 可爱羊驼</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="game-card stardew">
+          <div class="game-banner sdv-banner"></div>
+          <div class="game-content">
+            <h3>星露谷物语</h3>
+            <p class="game-tag">农场 · 种植 · 休闲</p>
+            <p>在星露谷经营农场，种菜、钓鱼、和村民交朋友。</p>
+            <div class="game-items">
+              <span class="item">🌾 金色作物</span>
+              <span class="item">🎣 传说之鱼</span>
+              <span class="item">💚 友好村民</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="game-card palworld">
+          <div class="game-banner pw-banner"></div>
+          <div class="game-content">
+            <h3>幻兽帕鲁</h3>
+            <p class="game-tag">捕捉 · 建造 · 合作</p>
+            <p>和帕鲁伙伴们一起探索、战斗、建设基地！</p>
+            <div class="game-items">
+              <span class="item">🔥 火系帕鲁</span>
+              <span class="item">🏰 基地</span>
+              <span class="item">🤝 好伙伴</span>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- 画廊 -->
+    <section id="gallery" class="panel">
+      <h2 class="panel-title">🎨 创意画廊</h2>
+      <p class="gallery-intro">这里展示我的画作和建造作品（可以继续添加哦！）</p>
+      <div class="gallery-grid">
+        <div class="gallery-frame">
+          <div class="frame-art art-1">
+            <span>⚽ 球场上的我</span>
+          </div>
+          <p class="frame-caption">足球日记 #1</p>
+        </div>
+        <div class="gallery-frame">
+          <div class="frame-art art-2">
+            <span>🏡 梦想中的家</span>
+          </div>
+          <p class="frame-caption">MC 建造作品</p>
+        </div>
+        <div class="gallery-frame">
+          <div class="frame-art art-3">
+            <span>🌻 星露谷农场</span>
+          </div>
+          <p class="frame-caption">农场设计图</p>
+        </div>
+        <div class="gallery-frame add-frame">
+          <div class="frame-art art-add">
+            <span>+</span>
+            <p>添加新作品</p>
+          </div>
+          <p class="frame-caption">等你来填！</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-bar">
+      <span>🌍 王雯的小世界</span>
+      <span class="separator">|</span>
+      <span>Made with ❤️ & 🧱</span>
+      <span class="separator">|</span>
+      <span id="game-time">Day 1 · 07:00</span>
+    </div>
+  </footer>
+
+  <div id="tooltip" class="tooltip hidden"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
